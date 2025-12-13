@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"> 
+
+    </div>
+
+    <h1 id="demo">This is heading</h1>
+
+    <ul class="list">
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>banana</li>
+        <li>Kiwi</li>
+    </ul>
+    <ul class="list">
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>banana</li>
+        <li>Kiwi</li>
+    </ul>
+
+    <button onclick="xyz()">click me</button>
+
+
+    <p name="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, fugit!</p>
+
+    <script>
+        // how to get an element in javascript
+        // a) document.getElementById() --> give your direct element
+        // b) document.getElementByClassName()  --> will give you array
+        // c) document.getElementByName()  -->
+        // d) document.querySelector() //  can access element id class and tagname , and get single element
+
+        // d) document.querySelectorAll()
+
+        let x = document.getElementById('demo');  //<h1 id="demo">This is heading</h1>
+        console.log(x)
+        x.style.backgroundColor = 'red'
+
+
+        let y  = document.getElementsByClassName('list');
+        console.log(y)
+        console.log(y[0])
+        y[0].style.backgroundColor = 'green'
+
+        let z = document.getElementsByName('one');
+        console.log(z)
+        console.log(z[0])
+        z[0].style.backgroundColor = 'blue'
+
+
+
+        let a = document.querySelector('.list');
+        console.log(a)
+
+
+        let b = document.querySelectorAll('ul');
+        console.log(b)
+
+
+        function xyz(){
+            // console.log("hello")
+            z[0].style.backgroundColor = 'yellow'
+        }
+
+
+
+
+
+
+
+
+        // Event --> are the action performed by user and responded by browser
+
+
+        // How to write using Javascript -->  .innerHTML, .innerText, .textContent
+
+
+        let tag = document.querySelector('.main');
+        console.log(tag)
+
+        // tag.innerHTML = 'hello this is javascript'
+        // tag.innerText = 'hello this is javascript'
+        tag.textContent = 'hello this is javascript'
+
+    
+    </script>
+</body>
+</html>

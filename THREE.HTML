@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #a{
+            color: red;
+            background-color: aqua;
+            padding: 30px;
+        }
+
+        #b{
+            border: 2px solid brown;
+            margin: 50px;
+        }
+
+        /* with the help of flex you can arramge all child tag in a single row or column */
+        .box{
+            display: flex;
+            flex-direction: row;  
+            /* background-color: aqua; */
+            height: 300px;
+            border: 2px solid black;
+            /* gap will create a space between childs */
+            /* gap: 60px ;     */
+            /* space between will create a maximum space between the child */
+            /* justify-content: space-between ; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* align-items: end; */
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="a">This is text one</h1>
+    <h2 id="b">This is heading two</h2>
+
+
+    <div class="box">
+        <h3>THis is child one</h3>
+        <h3>THis is child two</h3>
+    </div>
+    
+</body>
+</html>

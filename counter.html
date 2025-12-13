@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid blue;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 style="font-size: 50px;">Counter App</h3>
+        <p id="demo" style="font-size: 35px;">0</p>
+        <div class="btnBox">
+            <button onclick="increment()">Increment</button>
+            <button>Decrement</button>
+        </div>
+    </div>
+
+
+    <script>
+        let x = 0
+        let para = document.getElementById('demo')
+        function increment(){
+            // console.log('hello')
+            x = x+1;
+            console.log(x)
+            para.innerHTML = x
+        }
+
+
+        
+    </script>
+</body>
+</html>

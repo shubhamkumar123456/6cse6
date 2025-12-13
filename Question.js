@@ -1,0 +1,1 @@
+let text = "hello how are you" // output --< hellohowareyou
