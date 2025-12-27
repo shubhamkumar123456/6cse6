@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array --> it is a non primitive data type which can store collection of data in indexing form
+
+// exaample --> 
+        // let x = [10, 'hello', true, 23];
+
+// access any value in array --> use indexing method to access value
+        // console.log(x[1])
+
+// update or replace any value in array -->
+        // x[1] = 'hii';
+        // console.log(x)
+
+
+
+// Array methods -->
+// 1)length
+// 2)push
+// 3)pop
+// 4)unshift
+// 5)shift
+// 6)reverse
+// 7)slice
+// 8)splice
+// 9)concat
+// 10)join
+// 11)forEach
+// 12)map
+
+// length  --> 
+// let x = [10, 'hello', true, 23];
+// console.log(x.length)  //4
+
+// push method --> can add an element at the last of array
+// let x = [10, 'hello', true, 23];
+// x.push('mango');
+// console.log(x)
+
+// pop method --> can remove an element at the last
+// let x = [10, 'hello', true, 23];
+// x.pop()
+// x.pop()
+// console.log(x)  //
+
+// unshift method --> can add an element at the start
+// let x = [10, 'hello', true, 23];
+// x.unshift('mango');
+// console.log(x);
+
+// shift method --> can remove an element at the start
+// let x = [10, 'hello', true, 23];
+// x.shift();
+// console.log(x)
+
+// example --> 
+        // let x = [10, 'hello', true, 23];
+        // x.push(11)
+        // x.push(12)
+        // x.shift()
+        // x.unshift('john')
+        // x.pop()
+        // x.pop()
+        // x.pop()
+
+        // console.log(x)  //['john', 'hello', true];
+
+// reverse method --> can reverse array
+// let x = [10, 'hello', true, 23];
+// x.reverse();
+// console.log(x)
+
+
+// slice method --> can cut a portion from a string or array and retrun a copy
+// let x = [10, 'hello', true, 23];
+
+// let ans = x.slice(1,3)
+// console.log(ans)
+
+
+// splice method --> with splice you can add or remove element in array at any place
+// let x = [10, 'hello', true, 23];
+// a) add element at any place
+// x.splice(2,0,'mango');
+// console.log(x)
+
+// b)remove element at any place  
+    // x.splice(2,1)
+    // console.log(x)
+
+// c) mix case  --> 
+// x.splice(3,1,28)
+// console.log(x)
+
+
+// 9)concat --> used to merge two or more array
+        // let arr = [10, 20, 30, 40];
+        // let arr1 = [50, 60, 70, 80];
+
+        // let ans = arr.concat(arr1);
+        // console.log(ans)
+
+// 10)join -->  can convert an array into an string and can also join each value with given element
+
+// let arr = ["apple","mango",'kiwi','orange'];
+// // let ans = arr.join();
+// // console.log(ans)
+// let ans = arr.join('*');
+// console.log(ans)
+
+
+
+
+// 11)forEach  --> map and forEach method are used to traverse through an array
+        // let arr = ["apple","mango",'kiwi','orange'];
+        // arr.forEach((val, index)=>{
+        //     // console.log(val)
+        //     console.log(index)
+        // })
+// 12)map
+
+//  let arr = ["apple","mango",'kiwi','orange'];
+//         arr.map((val, index)=>{
+//             // console.log(val)
+//             console.log(index)
+//         })
+
+
+
+
+    </script>
+</body>
+</html>
