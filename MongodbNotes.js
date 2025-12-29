@@ -18,3 +18,4 @@
     
 
 // 4) find all data present inside a collection --> db.collectionName.find()
+// 4) find a particular single data present inside a collection --> db.collectionName.findOne({key:value})
